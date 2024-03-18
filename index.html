@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- title -->
+     <title>Portfolio || Uday A Patil</title>
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+     <!-- Google fonts -->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+     <!-- styles -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="herostyle.css"> <!-- style for hero section -->
+     <link rel="stylesheet" href="pagestyle.css"> <!-- style for about section-->
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+     <!-- Hero section -->
+     <section class="hero container-fluid bg-gray-u home" id="home">
+          <!-- Navbar -->
+          <nav class="navbar navbar-u navbar-nav font-montserrat-500 container bg-dark-u text-light-u">
+               <!-- Title -->
+               <div class="title-div">
+                    <h3 class="text-lighten"><span class="span-color">M</span>y <span
+                              class="span-color">P</span>ortfolio</h3>
+               </div>
+               <!-- Nav buttons -->
+               <div class="nav-btns-div text-center">
+                    <ul class="navbar-ul nav">
+                         <li class="navbar-li nav-item"><a href="#home" class="text-light-u to-neon-li-hover">Home</a>
+                         </li>
+                         <li class="navbar-li nav-item"><a href="#about" class="text-light-u to-neon-li-hover">About
+                                   Me</a>
+                         </li>
+                         <li class="navbar-li nav-item"><a href="#edunskills" class="text-light-u to-neon-li-hover">My
+                                   Skills</a>
+                         </li>
+                         <li class="navbar-li nav-item"><a href="#blog" class="text-light-u to-neon-li-hover">Blog</a>
+                         </li>
+                         <li class="navbar-li nav-item"><a href="#contact-me"
+                                   class="text-light-u to-neon-li-hover">Contact me</a>
+                         </li>
+                    </ul>
+               </div>
+               <!-- Download resume button -->
+               <div class="download-resumt-btn-div">
+                    <a href="#" class="dmr-btn text-light-u btn-gradient to-neon-hover">Download my resume</a>
+               </div>
+          </nav>
+          <!-- navbar ends -->
+
+          <!-- Page Header div -->
+          <div class="page-header container">
+
+               <div class="text-main-div text-light-u">
+                    <div class="furum-div">
+                         <p class="a-to-btn btn-gradient text-light-u font-poppins">Software Developer and Web Developer
+                         </p>
+                    </div>
+                    <div class="name-div">
+                         <h1 class="text-lighten text-shadow-neon-1px"><span class="span-color">U</span>day A. Patil
+                         </h1>
+                         <p class="font-poppins">I am a Frontend web developer and a full stack Java developer <br> I
+                              am intern at <a href="https://www.eaglebytesolutions.com/" class=" text-light-u">EagleByte
+                                   Solution pvt ltd</a></p>
+                    </div>
+                    <div class="download-cv-and-about-me-btns">
+                         <a href="" class="a-to-btn bg-neon text-dark-u font-poppins to-dark-hover">Get my CV</a>
+                         <a href="" class="a-to-btn btn-gradient text-light-u font-poppins to-neon-hover">Contact Me</a>
+                    </div>
+
+                    <!-- links div -->
+                    <div class="links-div-in-header container">
+                         <p class="text-light-u a-to-btn btn-gradient text-light-u font-poppins">Meet me on:
+                              <a href="" class="text-deco-none span-color">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2dd9fe"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                             d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                   </svg>
+                              </a>
+                              <a href="">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2dd9fe"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                             d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                   </svg>
+                              </a>
+                              <a href="">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2dd9fe"
+                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                             d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                   </svg>
+                              </a>
+                              <a href="">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2dd9fe"
+                                        class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                        <path
+                                             d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                   </svg>
+                              </a>
+                         </p>
+                    </div>
+                    <!-- links div ends -->
+               </div>
+               <div class="image-main-div">
+                    <div class="image-div">
+                         <img src="images/my-image.jpg" alt="My Photo" class="profile-image">
+                    </div>
+               </div>
+
+          </div>
+          <!-- Page header div ends-->
+
+     </section>
+     <!-- Hero section ends -->
+     <!-- wave -->
+     <div class="waves">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+               <path fill="#2e2f3a" fill-opacity="1"
+                    d="M0,0L20,42.7C40,85,80,171,120,181.3C160,192,200,128,240,133.3C280,139,320,213,360,213.3C400,213,440,139,480,122.7C520,107,560,149,600,181.3C640,213,680,235,720,240C760,245,800,235,840,218.7C880,203,920,181,960,149.3C1000,117,1040,75,1080,53.3C1120,32,1160,32,1200,53.3C1240,75,1280,117,1320,154.7C1360,192,1400,224,1420,240L1440,256L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z">
+               </path>
+          </svg>
+     </div>
+     <!-- About section -->
+     <section class="about container-fluid bg-lighten" id="about">
+          <div class="about-main-div container m-auto d-flex">
+
+               <div class="my-self-div">
+                    <div class="image-div">
+                         <img src="images/person.jpg" alt="">
+                    </div>
+                    <!-- cards -->
+                    <div class="brief-info text-dark-u d-inline-block">
+                         <h2 class="text-dark-u"><span class="span-color">A</span>bout Me</h2>
+                         <p>I Uday anil patil Jr. software developer at Eaglebyte Solutions pvt. ltd., nashik. I am cool
+                              minded
+                              and Hard working guy having team leading qualities.
+                         </p>
+                         <p><a href="#blog">read more</a></p>
+                         <div class="list">
+                              <dl>
+                                   <dt>Name:</dt>
+                                   <dd>Uday Anil Patil</dd>
+
+                                   <dt>Email: </dt>
+                                   <dd>uday1011patil@gmail.com</dd>
+
+                                   <dt>Contact no:</dt>
+                                   <dd>+91 7385975192</dd>
+
+                                   <dt>Address:</dt>
+                                   <dd>plot no 57, near bhavani mandir, meharun, jalgaon - 425001</dd>
+                              </dl>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- about section ends -->
+     <!-- Education and skills section -->
+     <section class="education-and-skills container" id="edunskills">
+          <div class="ens-main-div container">
+               <!-- Education div -->
+               <div class="education-main-div">
+                    <h2><span class="span-color">M</span>y Education</h2>
+                    <hr>
+                    <!-- Format of education to be displayed:
+                         Years
+                         Degree
+                         College name/ school name
+                         Marks in %ge/cgpa
+
+                         for eg:
+                         2021-24
+                         Bechalor in Computer Applicatiion (BCA)
+                         G. H. Raisoni institution of business management ,
+                         Jalgaon-425001
+                         (Currently Pursuing) -->
+                    <div class="Education">
+                         <p><span class="span-color">2021-24</span></p>
+                         <h5>Bechalor in Computer Application (BCA)</h5>
+                         <p>G. H. Raisoni Institution of Business Management, Jalgaon-425001</p>
+                         <p>(Currently Pursuing)</p>
+                    </div>
+                    <hr>
+                    <div class="Education">
+                         <p><span class="span-color">2019-21</span></p>
+                         <h5>12<sup>th</sup> in Science</h5>
+                         <p>G. H. Raisoni Junior College, Jalgaon-425001</p>
+                         <p>(Percentage: 80.81%)</p>
+                    </div>
+                    <hr>
+               </div>
+               <!-- skills div -->
+               <div class="skills-main-div m-5 mt-0">
+                    <h2><span class="span-color">M</span>y Professional Skills</h2>
+                    <hr>
+                    <div class="col">
+                         <div class="row">
+                              <h4>Web Development</h4>
+                              <p>I have a command on Html Css and JavaScript which helps me to design a responsive web
+                                   page. Also I have ability to connect web application with database using PHP.</p>
+                         </div>
+                         <div class="row">
+                              <h4>Java Fullstack Development</h4>
+                              <p>I have completed Java cource and have ability to work with advanced java technologies
+                                   like Swing, JDBC, Servlets, Jsp. I have created three projects by own fully on java.
+                              </p>
+                         </div>
+                         <hr>
+                         <div class="row">
+                              <h4>Databases</h4>
+                              <p>I have learned SQL and have ability to work on SQL. I have learned the Microsoft Server
+                                   and have worked on MySql.</p>
+                         </div>
+                         <hr>
+                    </div>
+               </div>
+          </div>
+          <hr>
+
+          <!-- My experience -->
+          <!--
+               Layout of experience
+               Name of Internship Provider
+               Subject of internship
+               Post at internship Duration
+               
+          -->
+          <div class="my-experience container mt-5 mb-5" id="experience">
+               <div class="experience-main-div">
+                    <h2 style="text-align: center;"><span class="span-color">M</span>y Professional Experience</h2>
+                    <div class="me-content mt-5 pt-2">
+                         <div class="row">
+                              <div class="col card">
+                                   <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.591964669912!2d75.56111467370715!3d21.008987280635463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90fbf57381473%3A0x3e6d3883d4b84118!2sPassion%20Software%20Solution!5e0!3m2!1sen!2sin!4v1710756514603!5m2!1sen!2sin"
+                                        width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade" class="card-img-top"></iframe>
+                                   <div class="card-body">
+                                        <h3>Passion Software Solution</h3>
+                                        <p>Web Development Internship</p>
+                                        <p>Post: Full stack web developer</p>
+                                        <p>duration: 1mon <span class="span-color">(Completed)</span></p>
+                                   </div>
+                              </div>
+                              <div class="col card">
+                                   <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.1537099066813!2d73.77348757366988!3d20.00206248140264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb8b9c3d14a9%3A0xad6f158a306dd206!2sManasvi%20Tech%20Solutions!5e0!3m2!1sen!2sin!4v1710756554776!5m2!1sen!2sin"
+                                        width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade" class="card-img-top"></iframe>
+                                   <div class="card-body">
+                                        <h3>EagleByte Solution Pvt. Ltd.</h3>
+                                        <p>Frontend Development Internship</p>
+                                        <p>Post: Jr. Software Developer</p>
+                                        <p>duration: 3mon <span style="color: red;">(Not Completed)</span></p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <hr>
+          <div class="projects-main-div container" id="Projects">
+               <div class="heading w-100">
+                    <h2><span class="span-color text-center">M</span>y Projects</h2>
+               </div>
+               <div class="content">
+                    <!-- Projects to be displayed in format
+                         Project title
+                         project aim
+                         (technology)
+                         description -->
+                    <div class="row">
+                         <!-- First project -->
+                         <div class="col M-1">
+                              <div class="card" style="width: 18rem;">
+                                   <img src="images/textpaint.jpg" class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                        <h4>TextPaint</h4>
+                                        <p>Text editor and Paint software combination</p>
+                                        <p>This application was the combination of text editor software and painting
+                                             software. Both were designed and developed by me.</p>
+                                        <p><span class="span-color">(Java, Java swing, MySql)</span></p>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- Second project -->
+                         <div class="col M-1">
+                              <div class="card" style="width: 18rem;">
+                                   <img src="images/datasaver.png" class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                        <h4>Data Saver</h4>
+                                        <p>Important data and password saver application</p>
+                                        <p>This application was the combination of text editor software and painting
+                                             software. Both were designed and developed by me.</p>
+                                        <p><span class="span-color">(Java, Java swing, MySql)</span></p>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- Third project -->
+                         <div class="col M-1">
+                              <div class="card" style="width: 18rem;">
+                                   <img src="images/ALibrary.jpg" class="card-img-top" alt="...">
+                                   <div class="card-body">
+                                        <h4>Ayodhya Library</h4>
+                                        <p>Library record and books saver application</p>
+                                        <p>This application was the combination of text editor software and painting
+                                             software. Both were designed and developed by me.</p>
+                                        <p><span class="span-color">(Java, Java swing, MySql)</span></p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <hr>
+     </section>
+     <!-- Education and skills section ends -->
+
+     <!-- Blog section -->
+     <section id="blog" class="mt-5">
+          <div class="container">
+               <h2 class="text-center"><span class="span-color">B</span>log</h2>
+          </div>
+          <!-- Blog -->
+          <main class="container">
+               <!-- Who Am I..?-->
+               <div class="who-am-I-div">
+                    <h2><span class="span-color">W</span>ho Am I...?</h2>
+                    <p>I am <strong>Uday Anil Patil</strong> intern at <a href="https://www.eaglebytesolutions.com"
+                              class="text-dark">Eaglebyte Solution Pvt. Ltd.</a>
+                         persuing
+                         BCA (Bechalor in Computer Application) from <a href="https://ghribmjal.raisoni.net/"
+                              class="text-dark-u">G. H. Raisoni institution of business management,
+                              Jalgaon</a>.
+                         I have completed my 12<sup>th</sup> in science from G. H. Raisoni junior college, jalgaon by
+                         achieving 80.81%.
+                         I had interest in IT field so I had decided to go with <span>BCA</span>. I always loves to
+                         inbuild creative things into code
+                         By profession as well as by passion I am a software developer</p>
+               </div>
+               <hr>
+
+               <!-- My Sweet Home -->
+               <div class="my-sweet-home-div">
+                    <h2><span class="span-color">M</span>y Sweet Home</h2>
+                    <p>My loving parents(Mother and Father) always blesses me to grow. My father owns a milk dairy and
+                         my mother which is housewife.
+                         My loving brother just completing 12th and all loves me and gives blessings to move further.
+                    </p>
+               </div>
+               <hr>
+
+               <!-- My Life -->
+               <div class="my-life-div">
+                    <h2><span class="span-color">M</span>y Life</h2>
+                    <p>My life is full of enjoyments and creativities. I loves to enjoy every movement in life,
+                         talks every person with love and maintains good relationships. From my childhood I am enjoying
+                         my every life movement
+                         what else the percentage goes below. From my childhood I was a middle bencher student who is
+                         average in studies
+                         but I have creative and logical mind. If I understand the exact concept what is being taught to
+                         me, I can easily
+                         implement it. I focuses more over logic and concept compare to theory. In 10<sup>th</sup>I
+                         got passed with 66.60%
+                         meanwhile in 12<sup>th</sup> it goes to 80.81%.
+                    </p>
+               </div>
+               <hr>
+
+               <!-- Part of interest -->
+               <div class="part-of-interest-div">
+                    <h2><span class="span-color">P</span>art of Interest</h2>
+                    <p>From the 10<sup>th</sup> I had decided to go with the IT firum choosen PCM (Physics Chemistry
+                         Maths) in 12<sup>th</sup>
+                         only becase of that. I got basic knowledge about web development in 12<sup>th</sup> after which
+                         in BCA 2<sup>nd</sup> semister
+                         I started hosting basic websites over free hosting platform by which I got knowledge about web
+                         hosting also.
+                         My that sites are now expired. And onwords I have started my carrier with Java. I had developed
+                         three projects in java
+                         rather than my practice always goes on. If possibles I an trying to prepare for OCJP (Oracle
+                         Certified Java Programmer) exam.
+                    </p>
+               </div>
+               <hr>
+
+          </main>
+          <!-- Blog ends -->
+     </section>
+     <!-- Blog section ends -->
+
+     <!-- Contact me section -->
+     <section class="contact-me mt-5" id="contact-me">
+          <main class="container mt-5">
+               <!-- Contact form -->
+               <!-- Things to add in contact form
+                    Full name (required)
+                    Email (required)
+                    contact no (required)
+                    Firum(company) name
+                    Firum/company address
+                    Message (required)
+               -->
+               <div class="row">
+                    <div class="col">
+                         <div class="contact-form container">
+                              <form action="#" method="post">
+                                   <h2><span class="span-color">C</span>ontact Me</h2>
+                                   <div class="col">
+                                        <div class="row">
+                                             <input type="text" name="fullname" id="fullname" placeholder="Full Name"
+                                                  required class="m-2 input-field glow-dark">
+                                        </div>
+                                        <div class="row">
+                                             <div class="col">
+                                                  <input type="email" name="email" id="email" placeholder="Valid Email"
+                                                       required class="m-2 input-field glow-dark">
+                                             </div>
+                                             <div class="col">
+                                                  <input type="tel" name="contact-no" id="contact-no"
+                                                       placeholder="Valid Contact Number" required
+                                                       class="m-2 input-field glow-dark">
+                                             </div>
+                                        </div>
+                                        <div class="row">
+                                             <div class="col">
+                                                  <input type="text" name="firum" id="firum"
+                                                       placeholder="Firum(company) Name"
+                                                       class="m-2 input-field glow-dark">
+                                             </div>
+                                             <div class="col">
+                                                  <input type="text" name="firum-add" id="firum-add"
+                                                       placeholder="Firum(Company) Address"
+                                                       class="m-2 input-field glow-dark">
+                                             </div>
+                                        </div>
+                                        <div class="row">
+                                             <textarea name="message" id="message" placeholder="Message" cols="30"
+                                                  rows="5" required class="m-2 text-area glow-dark"></textarea>
+                                        </div>
+                                        <div class="row">
+                                             <input type="submit" value="Submit"
+                                                  class="m-2 submit-btn-2 text-dark-u to-gradient-neon-hover">
+                                        </div>
+                                   </div>
+
+                              </form>
+                         </div>
+                    </div>
+                    <div class="col w-50">
+                         <img src="https://images.pexels.com/photos/618613/pexels-photo-618613.jpeg?auto=compress&cs=tinysrgb&w=600"
+                              alt="Contact image" class="w-100">
+                    </div>
+               </div>
+
+          </main>
+     </section>
+     <!-- Contact me section ends -->
+     <!-- footer section -->
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#2e2f3a" fill-opacity="1"
+               d="M0,96L21.8,133.3C43.6,171,87,245,131,245.3C174.5,245,218,171,262,165.3C305.5,160,349,224,393,229.3C436.4,235,480,181,524,165.3C567.3,149,611,171,655,160C698.2,149,742,107,785,112C829.1,117,873,171,916,176C960,181,1004,139,1047,154.7C1090.9,171,1135,245,1178,234.7C1221.8,224,1265,128,1309,117.3C1352.7,107,1396,181,1418,218.7L1440,256L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
+          </path>
+     </svg>
+     <section class="footer bg-gray-u">
+          <div class="footer-main-div text-light-u container d-flex">
+               <div class="row">
+                    <!-- Feedback form -->
+                    <div class="feedback-form-div col w-50">
+                         <form action="#" method="post" class="feedback-form">
+                              <h3 class="text-lighten"><span class="span-color">F</span>eedback me</h3>
+                              <input type="text" name="name" id="name" placeholder="Name" class="input" required><br>
+                              <input type="email" name="email" id="email" placeholder="Email" class="input"
+                                   required><br>
+                              <textarea name="textarea" id="" cols="30" rows="5" placeholder="Feedback message"
+                                   class="input textarea" required></textarea><br>
+                              <input type="submit" value="Submit"
+                                   class="submit-btn text-light-u to-gradient-neon-hover">
+                         </form>
+                    </div>
+                    <!-- Feedback form ends -->
+
+                    <!-- Useful links -->
+                    <div class="useful-footer-links-div col">
+                         <h4>Useful Links</h4>
+                         <ul>
+                              <li><a href="#home" class="text-light-u">Home</a></li>
+                              <li><a href="#about" class="text-light-u">About Me</a></li>
+                              <li><a href="#edunskills" class="text-light-u">My Professional Skills</a></li>
+                              <li><a href="#experience" class="text-light-u">My Experience</a></li>
+                              <li><a href="#projects" class="text-light-u">My Projects</a></li>
+                              <li><a href="#blog" class="text-light-u">Read My Blog</a></li>
+                              <li><a href="#contact-me" class="text-light-u">Contact Me</a></li>
+                         </ul>
+                    </div>
+
+                    <!-- useful links ends -->
+                    <!-- Footer intro-->
+                    <div class="footer-info-div container col">
+                         <h2 class="text-lighten"><span class="span-color">U</span>day Patil</h2>
+                         <h5>+91 7385975192</h5>
+                         <h5><a href="mailto:uday1011patil@gmail.com" class="text-light-u">uday1011patil@gmail.com</a>
+                         </h5>
+                         <h5>plot no 57, near bhavani mandir, <br> meharun, jalgaon- 425001</h5><br>
+                         <h4>meet me on</h4>
+                         <div class="social-links">
+                              <a href="" class="text-deco-none span-color">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2dd9fe"
+                                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                             d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                   </svg>
+                              </a>
+                              <a href="">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2dd9fe"
+                                        class="bi bi-github" viewBox="0 0 16 16">
+                                        <path
+                                             d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                   </svg>
+                              </a>
+                              <a href="">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2dd9fe"
+                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                             d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                   </svg>
+                              </a>
+                              <a href="">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#2dd9fe"
+                                        class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                        <path
+                                             d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                   </svg>
+                              </a><br><br>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="copy-right-div mb-0">
+               <p class="bg-dark-u text-light-u text-center">All Right reserved &copy;2024 || Uday Patil</p>
+          </div>
+     </section>
+     <!-- footer section ends -->
+</body>
+
+</html>

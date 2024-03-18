@@ -1,0 +1,163 @@
+.about-main-div {
+     display: flex;
+}
+@media screen and (max-width: 950px) {
+     .about-main-div{
+          display: block;
+     }
+}
+
+.image-div {
+     display: block;
+     height: fit-content;
+     width: 48%;
+}
+
+.my-self-div{
+     display: flex;
+     padding-bottom: 20vh;
+}
+@media screen and (max-width: 950px) {
+     .my-self-div{
+          display: block;
+          margin: auto;
+     }
+     .brief-info{
+          width: 100%;
+     }
+}
+.my-self-div .image-div img {
+     height: 500px;
+     width: 350px;
+}
+
+.cards-in-about-sec .card {
+     border: 2px solid gray;
+}
+
+.brief-info {
+     padding-top: 5vh;
+     width: 50%;
+}
+.brief-info h2{
+     margin-bottom: 5vh;
+}
+
+/* Education and skills section */
+.ens-main-div{
+     display: flex;
+}
+@media screen and (max-width: 950px) {
+     .ens-main-div{
+          display: block;
+     }
+     .skills-main-div{
+          width: 100%;
+          display: inline;
+     }
+}
+.skills-main-div{
+     width: 50%;
+}
+
+/* Education and skills section ends */
+
+
+/* Footer section */
+.input {
+     transition: 0.5s;
+     height: 30px;
+     width: 100px;
+     margin: 10px;
+     border: 1px solid #2dd9fe;
+     background: none;
+     padding: 10px;
+     border-radius: 15px;
+     color: rgb(235, 235, 235);
+}
+
+.input:active {
+     transition: 0.5s;
+     width: 300px;
+     border: 1px solid #2dd9fe;
+     background: none;
+     color: rgb(235, 235, 235);
+}
+
+.input:hover {
+     transition: 0.5s;
+     width: 300px;
+     border: 1px solid rgb(235, 235, 235);
+}
+
+.textarea {
+     height: 90px;
+     color: rgb(235, 235, 235);
+}
+
+.textarea:active {
+     transition: 0.5s;
+     width: 300px;
+     border: 1px solid #2dd9fe;
+     background: none;
+     color: rgb(235, 235, 235);
+}
+.textarea:hover{
+     transition: 0.5s;
+     width: 300px;
+
+}
+
+.submit-btn {
+     height: 30px;
+     width: 100px;
+     background: none;
+     border: 1px solid #2dd9fe;
+     border-radius: 15px;
+     padding-left: 10px;
+     padding-right: 10px;
+     margin-left: 10px;
+}
+.submit-btn:hover .input{
+     border-color: green;
+}
+
+.feedback-form-div {
+     display: inline;
+}
+
+.footer-info-div {
+     display: inline;
+}
+
+@media screen and (max-width: 900px) {
+
+     .feedback-form-div {
+          display: block;
+     }
+
+     .footer-info-div {
+          display: block;
+     }
+
+     .footer-main-div {
+          display: block;
+     }
+}
+
+@media screen and (max-width: 480px) {
+
+     .feedback-form-div {
+          display: block;
+     }
+
+     .footer-info-div {
+          display: block;
+     }
+
+     .footer-main-div {
+          display: block;
+     }
+}
+
+/* Footer section ends */

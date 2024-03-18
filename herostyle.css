@@ -1,0 +1,156 @@
+/* hero section styling here */
+:root{
+     --bg-dark: #24252e;
+     --bg-light: #dcdce4;
+     --bg-gray: #2e2f3a;
+
+     --text-light: #dcdce4;
+     --text-dark: #24252e;
+
+     --neon-color: #2dd9fe;
+     --border-dark:#3b3c47;
+}
+.navbar-u{
+     position: fixed;
+     display: flex;
+     height: 8vh;
+}
+@media screen and (max-width: 950px) {
+     .navbar-u{
+          width: 100%;
+          display: inline-block;
+     }
+     .title-div{
+          display: block;
+     }
+     .nav-btns-div{
+          display: block;
+     }
+     .download-resumt-btn-div{
+          display: none;
+     }
+     .dmr-btn{
+          display: none;
+     }
+}
+@media screen and (max-width: 480px) {
+     .navbar-u{
+          width: 100%;
+          display: inline-block;
+     }
+     .title-div{
+          display: block;
+     }
+     .nav-btns-div{
+          display: block;
+     }
+     .download-resumt-btn-div{
+          display: none;
+     }
+     .dmr-btn{
+          display: none;
+     }
+}
+.title-div{
+     display: inline;
+     margin: auto;
+}
+.nav-btns-div{
+     display: inline;
+     margin: auto;
+}
+.navbar-ul{
+     margin: auto;
+     list-style-type: none;
+     display: flex;
+}
+.navbar-li{
+     margin-left: 10px;
+     margin-right: 10px;
+     border-bottom: 1px solid var(--border-dark);
+}
+.navbar-li a{
+     text-decoration: none;
+}
+.download-resumt-btn-div{
+     display: inline;
+     margin: auto;
+}
+.dmr-btn{
+     text-decoration: none;
+     border: 1px solid var(--border-dark);
+     border-radius: 15px;
+     padding: 5px;
+     padding-left: 15px;
+     padding-right: 15px;
+}
+
+/* Header Div */
+.page-header{
+     height: 70vh;
+     display: flex;
+}
+@media screen and (max-width: 950px) {
+     .page-header{
+          margin: auto;
+          text-align: center;
+          height: fit-content;
+          padding-bottom: 10vh;
+          display: block;
+     }
+}
+.text-main-div{
+     margin: auto;
+     margin-top: 12vh;
+     /*display: inline-block;*/
+}
+.name-div{
+     margin-top: 5vh;
+}
+.download-cv-and-about-me-btns{
+     margin-top: 5vh;
+}
+.download-cv-and-about-me-btns q{
+     margin: 3vw;
+}
+.image-main-div{
+     margin: auto;
+     margin-top: 10vh;
+     margin-left: 5vw;
+     /*display: inline-block;*/
+}
+.profile-image{
+     margin: auto;
+     height: 350px;
+     width: 350px;
+     border: 5px solid var(--neon-color);
+     border-radius: 50%;
+     box-shadow: 0 4px 8px 0 var(--neon-color), 0 6px 20px 0 var(--neon-color);
+     /*box-shadow: 15px 15px blurred #2dd9fe;*/
+}
+@media screen and (max-width: 950px) {
+     .profile-image{
+          margin: auto;
+     }
+     .image-main-div{
+          margin-left: 2px;
+     }
+}
+
+/* links div */
+.links-div-in-header{
+     
+     margin-top: 5vh;
+     text-align: left;
+}
+@media screen and (max-width: 950px) {
+     
+}
+.links-div-in-header p{
+     display: inline;
+     width: 30%;
+}
+.links-div-in-header p a{
+     margin: 5px;
+}
+/* Header div ends */
