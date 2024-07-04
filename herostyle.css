@@ -126,6 +126,8 @@
      border: 5px solid var(--neon-color);
      border-radius: 50%;
      box-shadow: 0 4px 8px 0 var(--neon-color), 0 6px 20px 0 var(--neon-color);
+     -webkit-transform: scaleX(-1);
+     transform: scaleX(-1); 
      /*box-shadow: 15px 15px blurred #2dd9fe;*/
 }
 @media screen and (max-width: 950px) {
