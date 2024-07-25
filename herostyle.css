@@ -4,11 +4,15 @@
      --bg-light: #dcdce4;
      --bg-gray: #2e2f3a;
 
+     /* --color: rgb(46, 47, 58); */
+
      --text-light: #dcdce4;
      --text-dark: #24252e;
 
      --neon-color: #2dd9fe;
      --border-dark:#3b3c47;
+
+     --neon-color-lighter: linear-gradient(rgba(45, 217, 254, 0.9), rgba(193, 213, 218, 0.5));
 }
 .navbar-u{
      position: fixed;
@@ -113,6 +117,29 @@
 .download-cv-and-about-me-btns q{
      margin: 3vw;
 }
+/* style for color pallet */
+
+input[type="range"] {
+     width: 80%;
+     height: 15px;
+     border-radius: 7px;
+     outline: none;
+     -webkit-appearance: none;
+ }
+
+ input[type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     appearance: none;
+     width: 25px;
+     height: 25px;
+     border-radius: 50%;
+     background: #fff;
+     cursor: pointer;
+ }
+
+ /* color pallet style ends */
+
+
 .image-main-div{
      margin: auto;
      margin-top: 10vh;
@@ -123,9 +150,9 @@
      margin: auto;
      height: 350px;
      width: 350px;
-     border: 5px solid var(--neon-color);
+     border: 2px solid var(--neon-color);
      border-radius: 50%;
-     box-shadow: 0 4px 8px 0 var(--neon-color), 0 6px 20px 0 var(--neon-color);
+     box-shadow: 0 4px 8px 0 var(--neon-color), 0 6px 20px 0 rgb(192, 230, 230);
      -webkit-transform: scaleX(-1);
      transform: scaleX(-1); 
      /*box-shadow: 15px 15px blurred #2dd9fe;*/
@@ -156,3 +183,47 @@
      margin: 5px;
 }
 /* Header div ends */
+
+
+/* wave color change */
+.wave-color-change{
+     fill: var(--bg-gray);
+}
+
+
+
+/* style for scrolling cards or skills */
+
+.card-scroller {
+     overflow: hidden;
+     position: relative;
+ }
+ 
+ .card-container {
+     display: flex;
+     transition: transform 0.5s ease;
+ }
+ 
+ .card-item {
+     flex: 0 0 20%;
+     transition: transform 0.5s ease, opacity 0.5s ease;
+ }
+ 
+ .card-item img {
+     width: 100%;
+     border-radius: 10px;
+ }
+ 
+ .card-item.active {
+     transform: scale(1.2);
+     z-index: 1;
+ }
+ 
+ .card-item:not(.active) {
+     opacity: 0.5;
+ }
+ 
+
+ /* about section cross line css */
+
+ /* about section cross line css ends */
