@@ -381,8 +381,11 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" novalidate="novalidate">
                             <div class="form-row">
+                                <!-- license key -->
+                                <input type="hidden" name="access_key" value="7e034a34-89ae-448d-8ae6-079825e7670e">
+
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
                                         required="required" data-validation-required-message="Please enter your name" />
