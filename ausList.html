@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australian Tech Companies - Hiring Overview</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            padding: 30px;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            /* min-width: 1800px; */
+        }
+
+        thead {
+            background: #0f172a;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        thead th {
+            padding: 16px 14px;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 600;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+            white-space: nowrap;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #e5e7eb;
+            transition: 0.3s;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f9fbff;
+        }
+
+        tbody tr:hover {
+            background: #eaf3ff;
+        }
+
+        tbody td {
+            padding: 14px;
+            font-size: 14px;
+            color: #334155;
+            vertical-align: top;
+            line-height: 1.5;
+        }
+
+        .badge {
+            padding: 6px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .active {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .occasional {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .yes {
+            background: #dbeafe;
+            color: #1d4ed8;
+        }
+
+        .case {
+            background: #ede9fe;
+            color: #6d28d9;
+        }
+
+        .no {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        .title {
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+            padding: 40px 20px;
+            color: #1e2937;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+                0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px 20px 20px;
+            background: #0f172a;
+            color: white;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            text-align: center;
+            padding-bottom: 20px;
+            color: #64748b;
+            font-size: 16px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 0% 12px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #0f172a;
+            color: white;
+            font-weight: 600;
+            font-size: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        tr:hover {
+            background-color: #f8fafc;
+        }
+
+        td {
+            font-size: 14.5px;
+            line-height: 1.5;
+        }
+
+        .sr-no {
+            font-weight: 600;
+            color: #64748b;
+            text-align: center;
+            width: 50px;
+        }
+
+        .company-name {
+            font-weight: 600;
+            color: #1e40af;
+        }
+
+        .tech-cell {
+            font-size: 13.5px;
+            line-height: 1.4;
+        }
+
+        .hiring-cell {
+            color: #166534;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-right: 6px;
+            margin-bottom: 4px;
+        }
+
+        .size-large {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .size-sme {
+            background: #ecfdf5;
+            color: #065f46;
+        }
+
+        .links {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .links:hover {
+            text-decoration: underline;
+        }
+
+        .scroll-hint {
+            text-align: center;
+            padding: 15px;
+            color: #64748b;
+            font-size: 14px;
+            background: #f8fafc;
+        }
+
+        @media (max-width: 1024px) {
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Australian Tech Companies</h1>
+        <p class="subtitle">Hiring Overview • May 2026</p>
+
+        <table style="overflow-x: auto;">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Company Name</th>
+                    <th>Location</th>
+                    <th>Technologies</th>
+                    <th>Products / Services</th>
+                    <th>Company Size</th>
+                    <th>Hiring Status & Positions</th>
+                    <th>Work Mode</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="sr-no">1</td>
+                    <td class="company-name">Atlassian</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">Java, React.js, Node.js, AWS Cloud, Microservices, Python</td>
+                    <td>Collaboration SaaS (Jira, Confluence, Trello, Bitbucket)</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Full Stack Developer<br>• Cloud Engineer<br>• Software Engineer
+                        Intern</td>
+                    <td>Distributed-first / Hybrid<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">2</td>
+                    <td class="company-name">Canva</td>
+                    <td>Sydney, NSW & Melbourne, VIC</td>
+                    <td class="tech-cell">Java, Golang, React.js, Node.js, AWS Cloud, Swift, AI/ML Infrastructure</td>
+                    <td>Visual Communication & Graphic Design SaaS Platform</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Staff Software Engineer (Infra)<br>• Staff Frontend
+                        Engineer<br>• Mobile Developer</td>
+                    <td>Hybrid / Remote Options<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">3</td>
+                    <td class="company-name">Xero</td>
+                    <td>Melbourne, VIC & Sydney, NSW</td>
+                    <td class="tech-cell">.NET Core, AWS, React.js, Angular, Kubernetes, Microservices</td>
+                    <td>Cloud Accounting & FinTech Platform</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Lead Software Engineer (Mobile)<br>• .NET Developer<br>•
+                        Principal Systems Engineer</td>
+                    <td>Hybrid / Remote Options<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">4</td>
+                    <td class="company-name">TechnologyOne</td>
+                    <td>Brisbane, QLD</td>
+                    <td class="tech-cell">.NET Core, Angular, React.js, AWS Cloud, SQL Server</td>
+                    <td>Enterprise Resource Planning (ERP) SaaS</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Graduate Software Developer<br>• Cloud Systems Engineer<br>• QA
+                        Engineer</td>
+                    <td>Hybrid (Brisbane HQ)<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">5</td>
+                    <td class="company-name">REA Group</td>
+                    <td>Richmond (Melbourne), VIC</td>
+                    <td class="tech-cell">Ruby on Rails, React.js, Node.js, AWS, Kafka, Microservices</td>
+                    <td>Digital Real Estate Products (realestate.com.au)</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Full Stack Developer<br>• DevOps Engineer<br>• Software Engineer
+                    </td>
+                    <td>Hybrid<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">6</td>
+                    <td class="company-name">WiseTech Global</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">C#, .NET Core, Cloud Computing, High-Scale Databases</td>
+                    <td>Logistics Execution Enterprise Software (CargoWise)</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Software Engineer (.NET)<br>• QA Automation Engineer</td>
+                    <td>Hybrid / Onsite<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sr-no">7</td>
+                    <td class="company-name">SEEK</td>
+                    <td>Cremorne (Melbourne), VIC</td>
+                    <td class="tech-cell">React.js, Node.js, AWS, TypeScript, Microservices, GraphQL</td>
+                    <td>Employment Marketplace Platform & HR Tech</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Senior React Developer<br>• Full Stack Developer<br>• Cloud
+                        Security Engineer</td>
+                    <td>Hybrid<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">8</td>
+                    <td class="company-name">Carsales</td>
+                    <td>Melbourne, VIC</td>
+                    <td class="tech-cell">.NET Core, React.js, AWS Cloud, Microservices, Python</td>
+                    <td>Automotive Digital Marketplace & SaaS</td>
+                    <td><span class="badge size-large">Mid Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• .NET Developer<br>• Frontend Developer (React)<br>• DevOps
+                        Specialist</td>
+                    <td>Hybrid<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">9</td>
+                    <td class="company-name">MYOB</td>
+                    <td>Melbourne, VIC & Sydney, NSW</td>
+                    <td class="tech-cell">.NET, React.js, Node.js, AWS, Microservices</td>
+                    <td>Business Management & Accounting Solutions</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Full Stack Developer<br>• QA Engineer<br>• Software Engineer
+                    </td>
+                    <td>Hybrid / Remote Options<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">10</td>
+                    <td class="company-name">Afterpay (Block)</td>
+                    <td>Melbourne, VIC & Sydney, NSW</td>
+                    <td class="tech-cell">Java, Kotlin, Python, AWS, React.js, Microservices</td>
+                    <td>Buy Now Pay Later (BNPL) FinTech SaaS</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Java Developer<br>• Mobile Software Engineer<br>• Cloud Engineer
+                    </td>
+                    <td>Hybrid / Remote Options<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">11</td>
+                    <td class="company-name">Freelancer.com</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">PHP (Python/Go modernizations), Angular, React.js, MySQL, AWS</td>
+                    <td>Global Crowdsourcing Marketplace</td>
+                    <td><span class="badge size-large">Mid Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Software Engineer (Full Stack)<br>• Frontend Developer
+                        (Angular/React)</td>
+                    <td>Onsite / Hybrid<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sr-no">12</td>
+                    <td class="company-name">Employment Hero</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">Ruby on Rails, React.js, AWS, Node.js, Microservices</td>
+                    <td>HR, Payroll, and Employee Benefits SaaS</td>
+                    <td><span class="badge size-large">Mid Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Senior Full Stack Developer<br>• React Developer<br>• Product
+                        Engineer</td>
+                    <td>Hybrid / Remote Friendly<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">13</td>
+                    <td class="company-name">SafetyCulture</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">Go, React.js, Node.js, AWS Cloud, Kotlin, Microservices</td>
+                    <td>Operations Management & Workplace Safety SaaS</td>
+                    <td><span class="badge size-large">Mid Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Android/iOS Developer<br>• Backend Engineer (Go/Node)<br>• Cloud
+                        Infrastructure Engineer</td>
+                    <td>Hybrid (Sydney Campus)<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">14</td>
+                    <td class="company-name">Secure Code Warrior</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">Node.js, Angular, React.js, AWS, TypeScript</td>
+                    <td>Cybersecurity & Developer Training Platform</td>
+                    <td><span class="badge size-sme">SME</span></td>
+                    <td class="hiring-cell">Hiring<br>• Node.js Developer<br>• Full Stack Developer<br>• QA Engineer
+                    </td>
+                    <td>Remote / Hybrid<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sr-no">15</td>
+                    <td class="company-name">Linktree</td>
+                    <td>Melbourne, VIC</td>
+                    <td class="tech-cell">Node.js, React.js, Next.js, AWS Cloud, Serverless</td>
+                    <td>Social Media Link-in-Bio SaaS Platform</td>
+                    <td><span class="badge size-sme">SME</span></td>
+                    <td class="hiring-cell">Hiring<br>• Full Stack Developer<br>• React Developer<br>• Data/Cloud
+                        Engineer</td>
+                    <td>Distributed / Remote Options<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">16</td>
+                    <td class="company-name">Envato</td>
+                    <td>Melbourne, VIC</td>
+                    <td class="tech-cell">Ruby on Rails, React.js, Node.js, AWS, Python</td>
+                    <td>Digital Creative Assets Marketplace</td>
+                    <td><span class="badge size-sme">SME</span></td>
+                    <td class="hiring-cell">Hiring<br>• Front End Developer<br>• Full Stack Engineer<br>• DevOps
+                        Engineer</td>
+                    <td>Remote-First (Australia)<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">17</td>
+                    <td class="company-name">Qualtrics Australia</td>
+                    <td>Sydney, NSW & Melbourne, VIC</td>
+                    <td class="tech-cell">Java, Node.js, React.js, AWS, Microservices</td>
+                    <td>Experience Management (XM) Enterprise SaaS</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Software Engineer<br>• Full Stack Developer<br>• QA Automation
+                        Specialist</td>
+                    <td>Hybrid<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">18</td>
+                    <td class="company-name">Accenture Australia</td>
+                    <td>Sydney, Melbourne, Brisbane, Canberra, Perth, Adelaide</td>
+                    <td class="tech-cell">Java, Spring Boot, .NET Core, Angular, React.js, AWS/Azure/GCP Cloud</td>
+                    <td>Digital Transformation, Custom Software & System Integration</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Cloud Engineer<br>• Java Spring Boot Developer<br>• .NET Full
+                        Stack Engineer</td>
+                    <td>Hybrid (Visa Support Varies)<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">19</td>
+                    <td class="company-name">Cognizant Australia</td>
+                    <td>Sydney, NSW & Melbourne, VIC</td>
+                    <td class="tech-cell">Java, Spring Boot, Microservices, React.js, Cloud (AWS/Azure)</td>
+                    <td>IT Consulting & Digital Engineering Services</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Java Developer (Microservices)<br>• React Developer<br>• DevOps
+                        Engineer</td>
+                    <td>Hybrid<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">20</td>
+                    <td class="company-name">Infosys Australia</td>
+                    <td>Melbourne, Sydney, Brisbane, Adelaide</td>
+                    <td class="tech-cell">Java, .NET Core, Angular, React.js, Microservices, Cloud</td>
+                    <td>Enterprise IT Services & Managed Solutions</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• .NET Core Developer<br>• Java / Spring Boot Specialist<br>•
+                        Cloud Migration Architect</td>
+                    <td>Hybrid / Onsite client deployments<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <!-- Continuing with remaining rows (21-33) -->
+                <tr>
+                    <td class="sr-no">21</td>
+                    <td class="company-name">TCS Australia</td>
+                    <td>Sydney, Melbourne, Brisbane, Perth, Adelaide</td>
+                    <td class="tech-cell">Java, J2EE, Spring Boot, .NET, Angular, React.js, Cloud Architectures</td>
+                    <td>IT Consulting, Custom Software, Cloud Services</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Java Developer<br>• Angular / Frontend Specialist<br>• QA
+                        Automation Test Engineer</td>
+                    <td>Onsite / Hybrid<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sr-no">22</td>
+                    <td class="company-name">Capgemini Australia</td>
+                    <td>Sydney, Melbourne, Brisbane, Canberra</td>
+                    <td class="tech-cell">Java, Spring Boot, React.js, Node.js, Salesforce, AWS/Azure</td>
+                    <td>Custom App Development & Digital Transformation Consulting</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Full Stack Developer<br>• DevOps & Infrastructure
+                        Specialist<br>• Java Microservices Engineer</td>
+                    <td>Hybrid (Baseline clearances for Canberra)<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">23</td>
+                    <td class="company-name">Thoughtworks Australia</td>
+                    <td>Melbourne, Sydney, Brisbane</td>
+                    <td class="tech-cell">Java, Kotlin, React.js, Node.js, AWS/GCP, Serverless Architecture</td>
+                    <td>Premium Agile Software Development & Digital Consulting</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• Lead Software Engineer<br>• Full Stack Developer<br>• Cloud
+                        Infrastructure Consultant</td>
+                    <td>Hybrid / Highly Flexible<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">24</td>
+                    <td class="company-name">NCS Australia</td>
+                    <td>Melbourne, Sydney, Brisbane, Canberra</td>
+                    <td class="tech-cell">Java, Spring Boot, .NET Core, Angular, AWS/Azure Cloud Engineering</td>
+                    <td>System Integration & Digital Transformation Architecture</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Cloud Engineer<br>• .NET Software Engineer<br>• Full Stack
+                        Developer</td>
+                    <td>Hybrid / Client Site<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">25</td>
+                    <td class="company-name">Commonwealth Bank (CBA Digital)</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">Java, Spring Boot, .NET Core, React.js, Native Mobile (Swift/Kotlin), Cloud
+                        (AWS/Azure)</td>
+                    <td>Next-Gen Digital Banking and FinTech Platforms</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Java Developer (Microservices)<br>• React Developer<br>•
+                        Software Engineer (Mobile)</td>
+                    <td>Hybrid (Eveleigh Campus)<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">26</td>
+                    <td class="company-name">ANZ Technology</td>
+                    <td>Melbourne, VIC</td>
+                    <td class="tech-cell">Java, Go, React.js, Cloud Native (GCP/AWS), Node.js, Microservices</td>
+                    <td>Financial Services Technology & Core Platform Systems</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Senior Software Engineer (Java)<br>• Cloud Security
+                        Engineer<br>• React Developer</td>
+                    <td>Hybrid (Melbourne HQ)<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">27</td>
+                    <td class="company-name">Macquarie Group Technology</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">Java, Spring Boot, React.js, Node.js, AWS Cloud, Serverless</td>
+                    <td>Digital Banking, Wealth Management Ecosystems, FinTech Services</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Full Stack Developer<br>• Java Cloud Engineer<br>• QA Automation
+                        Lead</td>
+                    <td>Hybrid<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">28</td>
+                    <td class="company-name">Telstra (Digital Engineering)</td>
+                    <td>Melbourne, VIC & Sydney, NSW</td>
+                    <td class="tech-cell">React.js, Node.js, Java, AWS, Microservices, GraphQL</td>
+                    <td>Telecommunications Customer Platforms & IoT Systems</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Software Engineer (React/Node)<br>• Cloud Operations
+                        Engineer<br>• QA Engineer</td>
+                    <td>Hybrid / Flexible Remote<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">29</td>
+                    <td class="company-name">Honeywell Advanced Tech</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">.NET Core, C++, React.js, Azure Cloud, Microservices, IoT Protocols</td>
+                    <td>Industrial IoT, Smart Building SaaS & HealthTech Automation</td>
+                    <td><span class="badge size-large">Very Large Enterprise</span></td>
+                    <td class="hiring-cell">Hiring<br>• Software Engineer (.NET/React)<br>• IoT Systems Developer<br>•
+                        Embedded Systems Engineer</td>
+                    <td>Hybrid / Onsite Engineering Labs<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">30</td>
+                    <td class="company-name">Leonardo.ai (Canva Group)</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">Python, PyTorch, Node.js, React.js, AWS Cloud, Generative AI Infra</td>
+                    <td>Generative AI Content Production Platforms</td>
+                    <td><span class="badge size-sme">Startup / High-Growth</span></td>
+                    <td class="hiring-cell">Hiring<br>• Full Stack Engineer (AI Products)<br>• Infrastructure Engineer
+                    </td>
+                    <td>Hybrid / Remote Friendly<br><a href="#" class="links">Website</a> • <a href="#"
+                            class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">31</td>
+                    <td class="company-name">Harrison.ai</td>
+                    <td>Sydney, NSW</td>
+                    <td class="tech-cell">Python, PyTorch, React.js, Node.js, AWS/GCP, Healthcare Systems</td>
+                    <td>Clinician-led AI Medical Imaging Diagnostics Platforms</td>
+                    <td><span class="badge size-sme">Startup / High-Growth</span></td>
+                    <td class="hiring-cell">Hiring<br>• Software Engineer (Full Stack)<br>• MLOps / Cloud Engineer<br>•
+                        Senior React Developer</td>
+                    <td>Hybrid<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a></td>
+                </tr>
+                <tr>
+                    <td class="sr-no">32</td>
+                    <td class="company-name">Vero Digital</td>
+                    <td>Adelaide, SA</td>
+                    <td class="tech-cell">.NET Core, React.js, Node.js, AWS, Microservices</td>
+                    <td>Custom Enterprise Software & Logistics Tech</td>
+                    <td><span class="badge size-sme">SME</span></td>
+                    <td class="hiring-cell">Hiring<br>• Full Stack Developer<br>• QA Automation Tester</td>
+                    <td>Hybrid / Onsite<br><a href="#" class="links">Website</a> • <a href="#" class="links">Careers</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="sr-no">33</td>
+                    <td class="company-name">Modis Australia (Akacod)</td>
+                    <td>Perth, WA & Canberra, ACT</td>
+                    <td class="tech-cell">Java, .NET Core, Angular, Cloud Infrastructure, Cyber Security</td>
+                    <td>Custom Enterprise Applications & DefTech Consultations</td>
+                    <td><span class="badge size-large">Large</span></td>
+                    <td class="hiring-cell">Hiring<br>• .NET Core Developer<br>• Java Developer<br>• Cloud Architect
+                    </td>
+                    <td>Onsite / Hybrid (Requires PR/Citizen for local Gov)<br><a href="#" class="links">Website</a> •
+                        <a href="#" class="links">Careers</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="scroll-hint">
+            ← Scroll horizontally to view all columns on smaller screens →
+        </div>
+    </div>
+</body>
+
+<body>
+
+    <h1 class="title">Australia Tech Companies Hiring Table</h1>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Company Name</th>
+                    <th>Company Address</th>
+                    <th>Technologies Used</th>
+                    <th>Products / Services</th>
+                    <th>Company Size</th>
+                    <th>Work Mode</th>
+                    <th>Hiring Status</th>
+                    <th>Open Positions</th>
+                    <th>Visa Sponsorship</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>Atlassian</td>
+                    <td>Sydney, NSW</td>
+                    <td>Java, Spring Boot, React, Node.js, AWS, Microservices</td>
+                    <td>Jira, Confluence, Trello, Bitbucket</td>
+                    <td>Very Large Enterprise</td>
+                    <td>Hybrid / Remote</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Software Engineer, Full Stack, Backend</td>
+                    <td><span class="badge yes">Yes (High)</span></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Canva</td>
+                    <td>Sydney, NSW</td>
+                    <td>Java, React.js, Node.js, AWS, Typescript, Microservices</td>
+                    <td>Visual Suite, AI Design Tools</td>
+                    <td>Large</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Software Engineer (Full Stack / Backend)</td>
+                    <td><span class="badge yes">Yes (High)</span></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Macquarie Group</td>
+                    <td>Sydney, NSW</td>
+                    <td>Java, Spring Boot, React, AWS, Cloud Native, .NET</td>
+                    <td>Digital Banking, Fintech Systems</td>
+                    <td>Very Large Enterprise</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Software Engineer, Java Developer, React Developer</td>
+                    <td><span class="badge case">Case-by-case</span></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Commonwealth Bank (CBA)</td>
+                    <td>Sydney, NSW</td>
+                    <td>Java, Spring Boot, .NET, React, AWS, Azure, Microservices</td>
+                    <td>Enterprise Digital Banking Platforms</td>
+                    <td>Very Large Enterprise</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Engineer (Backend/Full-Stack)</td>
+                    <td><span class="badge case">Case-by-case</span></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>REA Group</td>
+                    <td>Melbourne, VIC</td>
+                    <td>React.js, Node.js, Java, AWS, Microservices, GraphQL</td>
+                    <td>Realestate.com.au, PropTech solutions</td>
+                    <td>Large</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Developer, Full Stack Engineer</td>
+                    <td><span class="badge yes">Yes</span></td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>SEEK</td>
+                    <td>Melbourne, VIC</td>
+                    <td>React.js, Node.js, .NET Core, AWS, TypeScript</td>
+                    <td>Employment Marketplace Platforms</td>
+                    <td>Large</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Software Engineer, React Developer</td>
+                    <td><span class="badge yes">Yes</span></td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>WiseTech Global</td>
+                    <td>Sydney, NSW</td>
+                    <td>.NET Core, C#, React.js, Cloud Native, SQL Server</td>
+                    <td>CargoWise (Global Logistics SaaS)</td>
+                    <td>Large</td>
+                    <td>Hybrid / Onsite</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Software Engineer, Frontend Engineer</td>
+                    <td><span class="badge yes">Yes</span></td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Xero</td>
+                    <td>Melbourne, VIC</td>
+                    <td>.NET Core, React, AWS, Node.js, Microservices</td>
+                    <td>Cloud Accounting SaaS for SMEs</td>
+                    <td>Large</td>
+                    <td>Remote / Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Developer (Full Stack, Backend)</td>
+                    <td><span class="badge yes">Yes</span></td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>TechnologyOne</td>
+                    <td>Brisbane, QLD</td>
+                    <td>.NET Core, React, Angular, AWS, Cloud Native</td>
+                    <td>Enterprise ERP Software Systems</td>
+                    <td>Large</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Software Engineer, Full Stack Developer</td>
+                    <td><span class="badge case">Case-by-case</span></td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>Suncorp Group</td>
+                    <td>Brisbane, QLD</td>
+                    <td>Java, Spring Boot, .NET, AWS, React.js, Microservices</td>
+                    <td>Insurance & Banking Tech Platforms</td>
+                    <td>Very Large Enterprise</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge occasional">Occasionally Hiring</span></td>
+                    <td>Software Engineer, API Developer</td>
+                    <td><span class="badge case">Case-by-case</span></td>
+                </tr>
+
+                <!-- Continue remaining rows in same format -->
+
+                <tr>
+                    <td>11</td>
+                    <td>Telstra</td>
+                    <td>Melbourne, VIC</td>
+                    <td>React.js, Node.js, Java, Spring Boot, AWS, Azure</td>
+                    <td>Telecom Tech, IoT, Cloud Networking</td>
+                    <td>Very Large Enterprise</td>
+                    <td>Remote / Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Cloud Engineer, Software Engineer</td>
+                    <td><span class="badge yes">Yes</span></td>
+                </tr>
+
+                <tr>
+                    <td>12</td>
+                    <td>NAB</td>
+                    <td>Melbourne, VIC</td>
+                    <td>Java, Spring Boot, React, Microservices, AWS</td>
+                    <td>Microservices Banking Infrastructure</td>
+                    <td>Very Large Enterprise</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Java Developer, Cloud Engineer</td>
+                    <td><span class="badge case">Case-by-case</span></td>
+                </tr>
+
+                <tr>
+                    <td>13</td>
+                    <td>ANZ Bank</td>
+                    <td>Melbourne, VIC</td>
+                    <td>.NET Core, Java, React, GCP, Enterprise Architecture</td>
+                    <td>Financial Software Products</td>
+                    <td>Very Large Enterprise</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Software Engineer, Backend Engineer</td>
+                    <td><span class="badge case">Case-by-case</span></td>
+                </tr>
+
+                <tr>
+                    <td>14</td>
+                    <td>Westpac Group</td>
+                    <td>Sydney, NSW</td>
+                    <td>Java, Spring Boot, React.js, AWS, REST APIs</td>
+                    <td>Fintech and Core Banking Systems</td>
+                    <td>Very Large Enterprise</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Software Engineer, API Developer</td>
+                    <td><span class="badge case">Case-by-case</span></td>
+                </tr>
+
+                <tr>
+                    <td>15</td>
+                    <td>SafetyCulture</td>
+                    <td>Sydney, NSW</td>
+                    <td>Node.js, React, Go, AWS, Microservices</td>
+                    <td>Workplace Operations App (SaaS)</td>
+                    <td>Mid Large</td>
+                    <td>Hybrid</td>
+                    <td><span class="badge active">Actively Hiring</span></td>
+                    <td>Full Stack Developer, Product Engineer</td>
+                    <td><span class="badge yes">Yes</span></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Strategic Resources Section -->
+
+    <section class="resources-section">
+
+        <h2 class="resources-title">
+            Strategic Resources & Links
+        </h2>
+
+        <p class="resources-subtitle">
+            To bypass general job-boards and speed up your outreach, use the direct channels mapped below for your 2-YOE
+            tech profiles.
+        </p>
+
+        <!-- CATEGORY 1 -->
+        <div class="resource-category">
+            <h3>1. Tier-1 Global Tech & Domestic Unicorns</h3>
+
+            <div class="resource-card">
+                <h4>Atlassian</h4>
+                <div class="resource-links">
+                    <a href="https://www.atlassian.com" target="_blank">Official Website</a>
+                    <a href="https://www.atlassian.com/company/careers" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/atlassian/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <h4>Canva</h4>
+                <div class="resource-links">
+                    <a href="https://www.canva.com" target="_blank">Official Website</a>
+                    <a href="https://www.canva.com/careers/" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/canva/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <h4>Airwallex</h4>
+                <div class="resource-links">
+                    <a href="https://www.airwallex.com" target="_blank">Official Website</a>
+                    <a href="https://www.airwallex.com/careers" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/airwallex/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <h4>Employment Hero</h4>
+                <div class="resource-links">
+                    <a href="https://employmenthero.com" target="_blank">Official Website</a>
+                    <a href="https://employmenthero.com/careers/" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/employment-hero/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY 2 -->
+        <div class="resource-category">
+            <h3>2. High-Growth Product Ecosystem (SaaS & FinTech)</h3>
+
+            <div class="resource-card">
+                <h4>SafetyCulture</h4>
+                <div class="resource-links">
+                    <a href="https://safetyculture.com" target="_blank">Official Website</a>
+                    <a href="https://safetyculture.com/careers/" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/safetyculturehq/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <h4>Octopus Deploy</h4>
+                <div class="resource-links">
+                    <a href="https://octopus.com" target="_blank">Official Website</a>
+                    <a href="https://octopus.com/company/careers" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/octopus-deploy/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <h4>Culture Amp</h4>
+                <div class="resource-links">
+                    <a href="https://www.cultureamp.com" target="_blank">Official Website</a>
+                    <a href="https://www.cultureamp.com/careers" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/culture-amp/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <h4>Rokt</h4>
+                <div class="resource-links">
+                    <a href="https://www.rokt.com" target="_blank">Official Website</a>
+                    <a href="https://www.rokt.com/careers" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/rokt/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORY 3 -->
+        <div class="resource-category">
+            <h3>3. Tier-1 Enterprise & Banking Infrastructure</h3>
+
+            <div class="resource-card">
+                <h4>Macquarie Group</h4>
+                <div class="resource-links">
+                    <a href="https://www.macquarie.com" target="_blank">Official Website</a>
+                    <a href="https://www.macquarie.com/careers.html" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/macquarie-group/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <h4>WiseTech Global</h4>
+                <div class="resource-links">
+                    <a href="https://www.wisetechglobal.com" target="_blank">Official Website</a>
+                    <a href="https://www.wisetechglobal.com/careers/" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/wisetech-global/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <h4>REA Group</h4>
+                <div class="resource-links">
+                    <a href="https://www.rea-group.com" target="_blank">Official Website</a>
+                    <a href="https://www.rea-group.com/careers/" target="_blank">Careers Page</a>
+                    <a href="https://www.linkedin.com/company/rea-group/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <style>
+        .resources-section {
+            margin-top: 50px;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .resources-title {
+            font-size: 32px;
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+
+        .resources-subtitle {
+            color: #475569;
+            margin-bottom: 35px;
+            line-height: 1.6;
+        }
+
+        .resource-category {
+            margin-bottom: 40px;
+        }
+
+        .resource-category h3 {
+            font-size: 22px;
+            color: #1e293b;
+            margin-bottom: 20px;
+            border-left: 5px solid #2563eb;
+            padding-left: 12px;
+        }
+
+        .resource-card {
+            background: #f8fbff;
+            border: 1px solid #dbeafe;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 18px;
+            transition: 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+        }
+
+        .resource-card h4 {
+            font-size: 20px;
+            margin-bottom: 14px;
+            color: #0f172a;
+        }
+
+        .resource-links {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .resource-links a {
+            text-decoration: none;
+            padding: 10px 16px;
+            background: #2563eb;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .resource-links a:hover {
+            background: #1d4ed8;
+        }
+
+        @media(max-width:768px) {
+
+            .resources-section {
+                padding: 20px;
+            }
+
+            .resource-links {
+                flex-direction: column;
+            }
+
+            .resource-links a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+
+</body>
+
+</html>
